@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Invitation Towards Namaz &amp; Quran</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Invitation Towards Namaz &amp; Quran</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="rules_of_quran_recitation">Quran Recitation Rules</string>
+    <string name="prounciation_for_namaz">Pronunciation for Namaz</string>
+
+</resources>
