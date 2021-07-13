@@ -1,4 +1,4 @@
-package com.kariba.invitationtowardsnamazquran.ui.home
+package com.kariba.invitationtowardsnamazquran.ui.namaz
 
 import android.os.Bundle
 import android.view.LayoutInflater

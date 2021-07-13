@@ -7,14 +7,14 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.kariba.invitationtowardsnamazquran.ui.home.HomeFragment"
+        android:name="com.kariba.invitationtowardsnamazquran.ui.namaz.HomeFragment"
         android:label=""
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.kariba.invitationtowardsnamazquran.ui.gallery.GalleryFragment"
+        android:name="com.kariba.invitationtowardsnamazquran.ui.quran.QuranRecitationRulesFragment"
         android:label=""
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_quran_recitation_rules" />
 
 </navigation>
