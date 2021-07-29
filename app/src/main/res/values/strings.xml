@@ -7,7 +7,42 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!--Rules of Quran Recitation-->
     <string name="rules_of_quran_recitation">Quran Recitation Rules</string>
+
+    <string name="Allah_name_title">আল্লাহ্‌ নাম বা শব্দ যেভাবে পড়তে হয়</string>
+    <string name="Allah_name_describe">আল্লাহ্‌ শব্দের আগে যবর অথবা পেশ থাকলে আল্লাহ্‌ শব্দের লাম কে মোটা করে পড়তে হয়। উদাহরণ ঃ আল্লহ। আল্লাহ্‌ শব্দের আগে যের থাকলে আল্লাহ্‌ শব্দের লাম কে পাতলা করে পড়তে হয়। উদাহরণ ঃ লিল্লাহ</string>
+    <string name="mod_or_mad_title">মদ বা মাদের হরফ</string>
+    <string name="mod_or_mad_describe">পুরো কোরআন শরীফে মদ বা মাদের হরফ ১০ প্রকার । মদ বা মাদ অর্থ টেনে পড়া।</string>
+    <string name="one_alif_mod_or_mad_title">এক আলিফ মদ বা মাদ ৩ প্রকার</string>
+    <string name="one_alif_mod_or_mad_describe">এক আলিফ মদ বা মাদ ৩ প্রকার।\n১। মদ্দে ত্ববাঈ / ত্ববায়ী\n২। মদ্দে বদল\n৩। মদ্দে  লীন।</string>
+    <string name="three_alif_mod_or_mad_title">৩ আলিফ মদ বা মাদ ২ প্রকার।</string>
+    <string name="three_alif_mod_or_mad_description">৩ আলিফ মদ বা মাদ ২ প্রকার।\n১। মদ্দে আরজী\n২। মদ্দে মুনফাসিল</string>
+    <string name="four_alif_mod_or_mad_title">৪ আলিফ মদ বা মাদ ৫ প্রকার।</string>
+    <string name="four_alif_mod_or_mad_description">৪ আলিফ মদ বা মাদ ৫ প্রকার।\n১। মদ্দে লাযীম কালমী মুছাক্কাল।\n২। মদ্দে লাযীম কালমী মুখাফফাফ।\n৩। মদ্দে লাযীম হরফী মুছাক্কাল।\n৪। মদ্দে লাযীম হরফী মুখাফফাফ।\n৫। মদ্দে মুত্তাসিল।</string>
+    <string name="mod_or_mad_e_tobai_title">মদ্দে ত্ববায়ী</string>
+    <string name="mod_or_mad_e_tobai_description">যবর এর বাম পাশে খালি আলিফ, যের  এর বাম পাশে যযম আলা ইয়া , পেশের বাম পাশে যযম আলা ওয়াও - এদের কে এক আলিফ টেনে পড়তে হয়। এদের কে মদ্দে ত্ববায়ী বলে।</string>
+    <string name="mod_or_mad_e_bodol_title">মদ্দে বদল</string>
+    <string name="mod_or_mad_e_bodol_description">আলিফে যের , যবর , পেশ , যযম হলে ঐ আলিফ কে হামযা বলে। হামযার  হরকত এর সাথে ১ আলিফ টেনে যে মদ পড়া হয় তাকে মদ্দে বদল বলে। উদাহরণ ঃ আআমানা, উউমিনা</string>
+    <string name="mod_or_mad_e_lin_title"> মদ্দে লীন</string>
+    <string name="mod_or_mad_e_lin_description">লীনের হরফ ২ টি।\n১ । যবর এর বাম পাশে যযম আলা ওয়াও\n২ । যবর এর বাম পাশে যযম আলা ইয়া।\nলীনের হরফ হলে তার ডান দিকের হরকত কে তাড়াতাড়ি পড়তে হয়।\nলীনের হরফের বামের হরফে ওয়াকফো  হলে ১ আলিফ টেনে পড়তে হয় , েকে মদ্দে লীন বলে। উদাহরণ ঃ মিন খওওফ।</string>
+    <string name="mod_or_mad_e_arji_title">মদ্দে আরজী</string>
+    <string name="mod_or_mad_e_arji_description">মদের হরফের বামের হরফে ওয়াকফো হলে ৩ আলিফ টেনে পড়তে হয়। একে মদ্দে আরজী বলে।</string>
+    <string name="mod_or_mad_e_munfasil_title">মদ্দে মুনফাসিল</string>
+    <string name="mod_or_mad_e_munfasil_description">মদের হরফের উপর চিকন চিহ্ন বামে হামযা থাকলে ৩ আলিফ টেনে পড়তে হয়। একে মদ্দে মুনফাসিল বলে।</string>
+    <string name="mod_or_mad_e_lazim_kalmi_musakkal_title">মদ্দে লাযীম কালমী মুছাক্কাল</string>
+    <string name="mod_or_mad_e_lazim_kalmi_musakkal_description">মদ্দে লাযীম কালমী মুছাক্কাল ঃ  মুছাক্কাল মানে তাশদীদ বিশিষ্ট। কালেমায়ে অর্থাৎ শব্দে মদের হরফের উপর মোটা চিহ্ন বামে তাশদীদ থাকলে ৪ আলিফ টেনে পড়তে হয়, একে মদ্দে লাযীম কালমী মুছাক্কাল বলে।</string>
+    <string name="mod_or_mad_e_lazim_kalmi_mukhaffaf_title">মদ্দে লাযীম কালমী মুখাফফাফ</string>
+    <string name="mod_or_mad_e_lazim_kalmi_mukhaffaf_description">মদ্দে লাযীম কালমী মুখাফফাফ ঃ কালেমায়ে অর্থাৎ শব্দে মদের হরফের উপর মোটা চিহ্ন বামে তাশদীদ না থাকলে যযম বা সাকিন থাকলে ৪ আলিফ টেনে পড়তে হয়। একে মদ্দে লাযীম কালমী মুখাফফাফ বলে।</string>
+    <string name="mod_or_mad_e_lazim_horfi_musakkal_title">মদ্দে লাযীম হরফী মুছাক্কাল</string>
+    <string name="mod_or_mad_e_lazim_horfi_musakkal_description">মদ্দে লাযীম হরফী মুছাক্কল ঃ  হরফের উপর মোটা চিহ্ন বামে তাশদীদ থাকলে, হরফের নাম ৪ আলিফ টেনে পড়তে হয়,  একে মদ্দে লাযীম হরফী মুছাক্কল বলে।</string>
+    <string name="mod_or_mad_e_lazim_horfi_mukhaffaf_title">মদ্দে লাযীম হরফী মুখাফফাফ</string>
+    <string name="mod_or_mad_e_lazim_horfi_mukhaffaf_description">মদ্দে লাযীম হরফী মুখাফফাফ ঃ  হরফের উপর মোটা চিহ্ন বামে তাশদীদ না থাকলে, হরফের নাম ৪ আলিফ টেনে পড়তে হয়। একে মদ্দে লাযীম হরফী মুখাফফাফ বলে।</string>
+    <string name="mod_or_mad_e_muttasil_title">মদ্দে মুত্তাসিল</string>
+    <string name="mod_or_mad_e_muttasil_description">মদ্দে মুত্তাসিল ঃ মদের হরফের উপর মোটা চিহ্ন বামে হামযা থাকলে ৪ আলিফ টেনে পড়তে হয়। একে মদ্দে মুত্তাসিল বলে।</string>
+
+
+    <!--Pronounciation for Namaz-->
     <string name="prounciation_for_namaz">Pronunciation for Namaz</string>
 
 </resources>

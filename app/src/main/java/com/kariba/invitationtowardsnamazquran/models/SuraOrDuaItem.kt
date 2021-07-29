@@ -8,15 +8,25 @@ import java.io.Serializable
  */
 class SuraOrDuaItem (
     @SerializedName("itemNumber") val itemNumber : String? = "",
-    @SerializedName("") val itemName : String? = ""
+    @SerializedName("itemTitle") val itemTitle : String? = "",
+    @SerializedName("itemDescribe") val itemDescribe : String? = "",
+    @SerializedName("isOpen") val isOpen : Boolean? = false
 
 ) : Serializable {
     fun modifiedItemNumber() : String{
         return itemNumber ?: ""
     }
 
-    fun modifiedItemName() : String{
-        return  itemName ?: ""
+    fun modifiedItemTitle() : String{
+        return  itemTitle ?: ""
+    }
+
+    fun modifiedItemDescribe() : String{
+        return  itemDescribe ?: ""
+    }
+
+    fun modifiedItemIsOpen() : Boolean{
+        return  isOpen ?: false
     }
 
 }
