@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_quran_recitation_rules"
         android:name="com.kariba.invitationtowardsnamazquran.ui.quran.QuranRecitationRulesFragment"
         android:label=""
         tools:layout="@layout/fragment_quran_recitation_rules" />

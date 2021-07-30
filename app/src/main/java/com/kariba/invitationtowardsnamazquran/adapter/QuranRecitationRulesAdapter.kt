@@ -1,33 +1,31 @@
 package com.kariba.invitationtowardsnamazquran.adapter
 
 import android.content.Context
-import android.opengl.Visibility
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.kariba.invitationtowardsnamazquran.R
-import com.kariba.invitationtowardsnamazquran.databinding.FragmentHomeBinding
-import com.kariba.invitationtowardsnamazquran.databinding.ItemSuraDoaOfNamazBinding
+import com.kariba.invitationtowardsnamazquran.databinding.ItemQuranRecitationRulesBinding
 import com.kariba.invitationtowardsnamazquran.models.SuraOrDuaItem
 
 /**
  * Created by Kariba Yasmin on 7/13/21.
  */
-class SuraOrDoaAdapter (
+class QuranRecitationRulesAdapter (
     var context: Context,
     var suraAndDoaList : ArrayList<SuraOrDuaItem> = ArrayList()
 
-) : RecyclerView.Adapter<SuraOrDoaAdapter.SuraOrDoaViewHolder>(){
+) : RecyclerView.Adapter<QuranRecitationRulesAdapter.QuranRecitationRulesViewHolder>(){
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuraOrDoaViewHolder {
-        val itemBinding : ItemSuraDoaOfNamazBinding = DataBindingUtil.inflate(LayoutInflater.from(context), R.layout.item_sura_doa_of_namaz, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuranRecitationRulesViewHolder {
+        val itemBinding : ItemQuranRecitationRulesBinding = DataBindingUtil.inflate(LayoutInflater.from(context), R.layout.item_quran_recitation_rules, parent, false)
 
-        return SuraOrDoaViewHolder(itemBinding)
+        return QuranRecitationRulesViewHolder(itemBinding)
     }
 
-    override fun onBindViewHolder(holder: SuraOrDoaViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: QuranRecitationRulesViewHolder, position: Int) {
         holder.bindView(context, suraAndDoaList[position])
     }
 
@@ -35,7 +33,7 @@ class SuraOrDoaAdapter (
        return suraAndDoaList.size
     }
 
-    class SuraOrDoaViewHolder(private val itemBinding: ItemSuraDoaOfNamazBinding) :
+    class QuranRecitationRulesViewHolder(private val itemBinding: ItemQuranRecitationRulesBinding) :
         RecyclerView.ViewHolder(itemBinding.root){
             fun bindView(
                 context : Context,

@@ -7,8 +7,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!--Home-->
+    <string name="home">হোম</string>
+
     <!--Rules of Quran Recitation-->
-    <string name="rules_of_quran_recitation">Quran Recitation Rules</string>
+    <string name="rules_of_quran_recitation">কোরআন পড়ার নিয়ম</string>
 
     <string name="Allah_name_title">আল্লাহ্‌ নাম বা শব্দ যেভাবে পড়তে হয়</string>
     <string name="Allah_name_describe">আল্লাহ্‌ শব্দের আগে যবর অথবা পেশ থাকলে আল্লাহ্‌ শব্দের লাম কে মোটা করে পড়তে হয়। উদাহরণ ঃ আল্লহ। আল্লাহ্‌ শব্দের আগে যের থাকলে আল্লাহ্‌ শব্দের লাম কে পাতলা করে পড়তে হয়। উদাহরণ ঃ লিল্লাহ</string>
@@ -42,7 +45,16 @@
     <string name="mod_or_mad_e_muttasil_description">মদ্দে মুত্তাসিল ঃ মদের হরফের উপর মোটা চিহ্ন বামে হামযা থাকলে ৪ আলিফ টেনে পড়তে হয়। একে মদ্দে মুত্তাসিল বলে।</string>
 
 
-    <!--Pronounciation for Namaz-->
-    <string name="prounciation_for_namaz">Pronunciation for Namaz</string>
+    <!--Sura uses in Namaz-->
+    <string name="sura_uses_in_namaz">নামাযে ব্যবহৃত সূরা</string>
+
+    <!--Doa uses in Namaz-->
+    <string name="doa_uses_in_namaz">নামাযে ব্যবহৃত দোয়া</string>
+
+    <!--Masnun Doa-->
+    <string name="masnun_doa">মাসনুন দোয়া</string>
+
+    <!--Tasbih-->
+    <string name="tasbih">তাসবিহ</string>
 
 </resources>

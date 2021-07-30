@@ -6,12 +6,12 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_quran_recitation_rules"
             android:icon="@drawable/ic_baseline_auto_stories_24"
             android:title="@string/rules_of_quran_recitation" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_baseline_book_24"
-            android:title="@string/prounciation_for_namaz" />
 
     </group>
 </menu>
