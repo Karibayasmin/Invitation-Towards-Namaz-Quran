@@ -1,4 +1,4 @@
-package com.kariba.invitationtowardsnamazquran.ui.namaz
+package com.kariba.invitationtowardsnamazquran.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.LiveData

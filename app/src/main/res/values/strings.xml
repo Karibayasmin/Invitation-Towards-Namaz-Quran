@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Invitation Towards Namaz &amp; Quran</string>
+    <!--<string name="app_name">Invitation Towards Namaz &amp; Quran</string>-->
+    <string name="app_name">ইসলাম এর দাওয়াত</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Invitation Towards Namaz &amp; Quran</string>
+    <string name="nav_header_title">ইসলাম এর দাওয়াত</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
@@ -56,5 +57,7 @@
 
     <!--Tasbih-->
     <string name="tasbih">তাসবিহ</string>
+
+    <string name="empty_string"> </string>
 
 </resources>

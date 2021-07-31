@@ -11,8 +11,10 @@ import com.kariba.invitationtowardsnamazquran.databinding.ItemQuranRecitationRul
 import com.kariba.invitationtowardsnamazquran.models.SuraOrDuaItem
 
 /**
- * Created by Kariba Yasmin on 7/13/21.
- */
+* Created by Kariba Yasmin on 7/13/21.
+*/
+
+
 class QuranRecitationRulesAdapter (
     var context: Context,
     var suraAndDoaList : ArrayList<SuraOrDuaItem> = ArrayList()
@@ -38,9 +40,10 @@ class QuranRecitationRulesAdapter (
             fun bindView(
                 context : Context,
                 item: SuraOrDuaItem
+
                 ){
                 itemBinding.suraAndDoaItem = item
-                itemBinding.executePendingBindings()
+                //itemBinding.executePendingBindings()
 
                 itemBinding.cardViewSuraOrDua.setOnClickListener {
                     if(item.itemDescribe == "")
@@ -48,6 +51,12 @@ class QuranRecitationRulesAdapter (
 
                     itemBinding.textViewItemDescription.visibility =
                         if(itemBinding.textViewItemDescription.visibility == View.GONE)
+                            View.VISIBLE
+                        else
+                            View.GONE
+
+                    itemBinding.textViewAudio.visibility =
+                        if(itemBinding.textViewAudio.visibility == View.GONE)
                             View.VISIBLE
                         else
                             View.GONE

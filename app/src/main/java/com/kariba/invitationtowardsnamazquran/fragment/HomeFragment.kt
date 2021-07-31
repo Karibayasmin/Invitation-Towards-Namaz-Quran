@@ -1,17 +1,16 @@
-package com.kariba.invitationtowardsnamazquran.ui.namaz
+package com.kariba.invitationtowardsnamazquran.fragment
 
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.kariba.invitationtowardsnamazquran.R
 import com.kariba.invitationtowardsnamazquran.databinding.FragmentHomeBinding
-import com.kariba.invitationtowardsnamazquran.ui.quran.QuranRecitationRulesFragment
+import com.kariba.invitationtowardsnamazquran.viewmodel.HomeViewModel
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.fragment_home.*
 

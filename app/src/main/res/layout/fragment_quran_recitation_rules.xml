@@ -10,14 +10,14 @@
 
         <variable
             name="viewModel"
-            type="com.kariba.invitationtowardsnamazquran.ui.namaz.HomeViewModel" />
+            type="com.kariba.invitationtowardsnamazquran.viewmodel.HomeViewModel" />
 
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.namaz.HomeFragment"
+        tools:context=".fragment.HomeFragment"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"

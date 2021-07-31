@@ -11,8 +11,12 @@
             type="com.kariba.invitationtowardsnamazquran.models.SuraOrDuaItem" />
 
         <variable
+            name="audioItem"
+            type="com.kariba.invitationtowardsnamazquran.models.SuraOrDuaItem.AudioItem" />
+
+        <variable
             name="suraAndDoaViewModel"
-            type="com.kariba.invitationtowardsnamazquran.ui.namaz.HomeViewModel" />
+            type="com.kariba.invitationtowardsnamazquran.viewmodel.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -90,11 +94,21 @@
             android:textColor="@color/black"
             android:visibility="gone"/>
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textView_itemDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:visibility="gone"
+            android:text="@{(suraAndDoaItem.subMenu.size() > 1) ? suraAndDoaItem.subMenu[0].modifiedAudioItemName() : @string/empty_string}"/>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@color/white"
-            app:layout_constraintTop_toBottomOf="@+id/textView_itemDescription"
+            app:layout_constraintTop_toBottomOf="@+id/textView_audio"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="2dp"/>

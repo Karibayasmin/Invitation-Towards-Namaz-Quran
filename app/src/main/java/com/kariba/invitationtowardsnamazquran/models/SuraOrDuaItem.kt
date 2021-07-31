@@ -1,5 +1,6 @@
 package com.kariba.invitationtowardsnamazquran.models
 
+import android.media.MediaPlayer
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
@@ -10,7 +11,9 @@ class SuraOrDuaItem (
     @SerializedName("itemNumber") val itemNumber : String? = "",
     @SerializedName("itemTitle") val itemTitle : String? = "",
     @SerializedName("itemDescribe") val itemDescribe : String? = "",
-    @SerializedName("isOpen") val isOpen : Boolean? = false
+    @SerializedName("isOpen") val isOpen : Boolean? = false,
+    @SerializedName("") val subMenu : ArrayList<AudioItem>? = ArrayList()
+
 
 ) : Serializable {
     fun modifiedItemNumber() : String{
@@ -27,6 +30,15 @@ class SuraOrDuaItem (
 
     fun modifiedItemIsOpen() : Boolean{
         return  isOpen ?: false
+    }
+
+    class AudioItem(
+        @SerializedName("audio") val audioName : String? = ""
+    ) : Serializable{
+
+        fun modifiedAudioItemName() : String{
+            return  audioName ?: ""
+        }
     }
 
 }
