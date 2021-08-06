@@ -12,7 +12,7 @@ class SuraOrDuaItem (
     @SerializedName("itemTitle") val itemTitle : String? = "",
     @SerializedName("itemDescribe") val itemDescribe : String? = "",
     @SerializedName("isOpen") val isOpen : Boolean? = false,
-    @SerializedName("") val subMenu : ArrayList<AudioItem>? = ArrayList()
+    @SerializedName("") val subMenu : ArrayList<SuraOrDuaItem>? = ArrayList()
 
 
 ) : Serializable {
@@ -30,15 +30,6 @@ class SuraOrDuaItem (
 
     fun modifiedItemIsOpen() : Boolean{
         return  isOpen ?: false
-    }
-
-    class AudioItem(
-        @SerializedName("audio") val audioName : String? = ""
-    ) : Serializable{
-
-        fun modifiedAudioItemName() : String{
-            return  audioName ?: ""
-        }
     }
 
 }

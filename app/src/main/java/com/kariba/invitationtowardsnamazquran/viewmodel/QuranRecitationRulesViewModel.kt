@@ -20,23 +20,23 @@ class QuranRecitationRulesViewModel : ViewModel() {
     private fun getMutableSuraAndDoaData(context: Context) {
         var suraAndDoaList : ArrayList<SuraOrDuaItem> = ArrayList()
 
-        var audioListItem1 : ArrayList<SuraOrDuaItem.AudioItem> = ArrayList()
-        var audioListItem2 : ArrayList<SuraOrDuaItem.AudioItem> = ArrayList()
+        var exampleItemListOfItemOne : ArrayList<SuraOrDuaItem> = ArrayList()
 
-        audioListItem1.add(SuraOrDuaItem.AudioItem("Allohu"))
-        audioListItem1.add(SuraOrDuaItem.AudioItem(" "))
-        audioListItem2.add(SuraOrDuaItem.AudioItem("Lillahi"))
-        audioListItem2.add(SuraOrDuaItem.AudioItem(" "))
-        //audioList.add(SuraOrDuaItem.AudioItem(" "))
+        exampleItemListOfItemOne.add(SuraOrDuaItem("", context.getString(
+            R.string.Allah_name_example_one),"",  false, ArrayList()
+        ))
+        exampleItemListOfItemOne.add(SuraOrDuaItem("", context.getString(
+            R.string.Allah_name_example_two),"",  false, ArrayList()
+        ))
 
         suraAndDoaList.add(
             SuraOrDuaItem("১.",context.getString(R.string.Allah_name_title),context.getString(
-                R.string.Allah_name_describe),false, audioListItem1
+                R.string.Allah_name_describe),false, exampleItemListOfItemOne
             )
         )
         suraAndDoaList.add(
             SuraOrDuaItem("২.",context.getString(R.string.mod_or_mad_title),context.getString(
-                R.string.mod_or_mad_describe),false, ArrayList()
+                R.string.mod_or_mad_describe), false, ArrayList()
             )
         )
         suraAndDoaList.add(

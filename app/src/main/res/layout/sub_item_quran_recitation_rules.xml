@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -10,10 +9,6 @@
         <variable
             name="suraAndDoaItem"
             type="com.kariba.invitationtowardsnamazquran.models.SuraOrDuaItem" />
-
-        <variable
-            name="suraAndDoaViewModel"
-            type="com.kariba.invitationtowardsnamazquran.viewmodel.QuranRecitationRulesViewModel" />
 
         <variable
             name="position"
@@ -32,6 +27,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
             android:padding="8dp"
             app:cardCornerRadius="20dp"
             app:cardElevation="2dp"
@@ -48,7 +44,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_baseline_menu_book_24"
+                    app:srcCompat="@drawable/ic_baseline_volume_up_24"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginTop="10dp"/>
@@ -96,22 +92,11 @@
             android:textColor="@color/black"
             android:visibility="gone"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView_suraOrDoa_subitem"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="8dp"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView_itemDescription"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_quran_recitation_rules"/>
-
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@color/white"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView_suraOrDoa_subitem"
+            app:layout_constraintTop_toBottomOf="@+id/textView_itemDescription"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="1dp"/>

@@ -6,20 +6,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.kariba.invitationtowardsnamazquran.adapter.QuranRecitationRulesAdapter
 import com.kariba.invitationtowardsnamazquran.databinding.FragmentQuranRecitationRulesBinding
-import com.kariba.invitationtowardsnamazquran.databinding.ActivityMainBinding
 import com.kariba.invitationtowardsnamazquran.models.SuraOrDuaItem
 import com.kariba.invitationtowardsnamazquran.viewmodel.QuranRecitationRulesViewModel
 import kotlinx.android.synthetic.main.fragment_quran_recitation_rules.*
 import com.kariba.invitationtowardsnamazquran.R
-import kotlinx.android.synthetic.main.item_quran_recitation_rules.*
-import com.kariba.invitationtowardsnamazquran.BR
 import com.singularitybd.dife.interfaces.OnItemClickListener
 import com.singularitybd.dife.interfaces.OnSubItemClickListener
 
@@ -27,6 +23,8 @@ import com.singularitybd.dife.interfaces.OnSubItemClickListener
 class QuranRecitationRulesFragment : Fragment() {
 
     private lateinit var quranRecitationRulesViewModel: QuranRecitationRulesViewModel
+
+    private lateinit var adapter : QuranRecitationRulesAdapter
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -38,32 +36,37 @@ class QuranRecitationRulesFragment : Fragment() {
 
         val binding = DataBindingUtil.inflate<FragmentQuranRecitationRulesBinding>(inflater, R.layout.fragment_quran_recitation_rules, container, false)
 
+        initViews(binding, context)
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        loadSuraAndDoaData()
     }
 
-    private fun setAudio() {
-            val music: MediaPlayer = MediaPlayer.create(context, R.raw.allohu)
-            music.start()
+    private fun initViews(binding: FragmentQuranRecitationRulesBinding?, context: Context?) {
+        adapter = QuranRecitationRulesAdapter(requireContext(), quranRecitationRulesViewModel, onMenuClickListener, onSubMenuItemClickListener)
 
+        binding?.recyclerViewSuraOrDoa?.setHasFixedSize(true)
+        binding?.recyclerViewSuraOrDoa?.adapter = adapter
+
+        loadSuraAndDoaData(context)
     }
 
-    private fun loadSuraAndDoaData() {
-        quranRecitationRulesViewModel.loadSuraAndDoaList(requireContext()).observe(viewLifecycleOwner, object : Observer<ArrayList<SuraOrDuaItem>> {
-            override fun onChanged(data: ArrayList<SuraOrDuaItem>?) {
+    private fun loadSuraAndDoaData(context: Context?) {
+        if (context != null) {
+            quranRecitationRulesViewModel.loadSuraAndDoaList(context).observe(viewLifecycleOwner, object : Observer<ArrayList<SuraOrDuaItem>> {
+                override fun onChanged(data: ArrayList<SuraOrDuaItem>?) {
+                    if (data != null) {
+                        adapter.setMenuItemList(data)
+                    }
+                    adapter.notifyDataSetChanged()
+                }
 
-                val adapter = data?.let { QuranRecitationRulesAdapter(requireContext(), it) }
-                recyclerView_suraOrDoa.isNestedScrollingEnabled = false
-                recyclerView_suraOrDoa.setHasFixedSize(true)
-                recyclerView_suraOrDoa.adapter = adapter
-            }
-
-        })
+            })
+        }
     }
 
     private val onMenuClickListener = object : OnItemClickListener {
@@ -79,20 +82,23 @@ class QuranRecitationRulesFragment : Fragment() {
             val parentItem = quranRecitationRulesViewModel.mutableSuraAndDoaListData.value?.get(parentPosition) ?: return
 
             val childItem = parentItem.subMenu?.get(childPosition)
-            onItemClickedFunctionSubMenu(view.context, childItem)
-        }
-    }
-
-    private fun onItemClickedFunctionSubMenu(
-        context: Context,
-        childItem: SuraOrDuaItem.AudioItem?
-    ) {
-        if(childItem?.modifiedAudioItemName() == "Allohu"){
-            setAudio()
+            if (childItem != null) {
+                onItemClickedFunction(view.context, childItem)
+            }
         }
     }
 
     private fun onItemClickedFunction(context: Context, item: SuraOrDuaItem) {
-        TODO("Not yet implemented")
+        if (item.subMenu?.isNotEmpty() == true)
+            return
+
+        if(item.itemTitle == context.getString(R.string.Allah_name_example_one)){
+            val music: MediaPlayer = MediaPlayer.create(context, R.raw.allohu)
+            music.start()
+        }
+        if(item.itemTitle == context.getString(R.string.Allah_name_example_two)){
+            val music: MediaPlayer = MediaPlayer.create(context, R.raw.allohu)
+            music.start()
+        }
     }
 }
