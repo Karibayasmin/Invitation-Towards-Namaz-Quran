@@ -9,7 +9,7 @@
     <string name="action_settings">Settings</string>
 
     <!--Home-->
-    <!--<string name="home">হোম</string>-->
+    <string name="home">হোম</string>
 
     <!--Rules of Quran Recitation-->
     <string name="rules_of_quran_recitation">কোরআন পড়ার নিয়ম</string>
