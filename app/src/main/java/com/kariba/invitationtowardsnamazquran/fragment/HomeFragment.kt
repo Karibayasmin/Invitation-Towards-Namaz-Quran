@@ -1,14 +1,19 @@
 package com.kariba.invitationtowardsnamazquran.fragment
 
 import android.os.Bundle
+import android.os.Handler
 import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.startActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModelProvider
 import com.kariba.invitationtowardsnamazquran.R
+import com.kariba.invitationtowardsnamazquran.activity.FragmentActivity.Companion.TAG_QURAN_RECITATION_RULES
+import com.kariba.invitationtowardsnamazquran.activity.FragmentActivity.Companion.startActivity
 import com.kariba.invitationtowardsnamazquran.databinding.FragmentHomeBinding
 import com.kariba.invitationtowardsnamazquran.viewmodel.HomeViewModel
 import kotlinx.android.synthetic.main.content_main.*
@@ -40,18 +45,17 @@ class HomeFragment : Fragment() {
 
     private fun switchFragment() {
         cardView_quranRecitation_Rules.setOnClickListener {
-            if (nav_host_fragment != null) {
-                val transaction = activity?.supportFragmentManager?.beginTransaction()
-                transaction?.replace(R.id.nav_host_fragment, QuranRecitationRulesFragment())
-                transaction?.commit()
-            }
+            startActivity(requireContext(), TAG_QURAN_RECITATION_RULES)
         }
     }
 
     private fun setAnimationOnTouchOption() {
         cardView_quranRecitation_Rules.setOnTouchListener { v, event ->
             if(event.action == KeyEvent.ACTION_DOWN){
-                cardView_quranRecitation_Rules.setCardBackgroundColor(resources.getColor(R.color.colorPrimary))
+                val handler = Handler()
+                handler.postDelayed({
+                    cardView_quranRecitation_Rules.setCardBackgroundColor(resources.getColor(R.color.colorPrimary))
+                }, 3000)
 
             }else{
                 cardView_quranRecitation_Rules.setCardBackgroundColor(resources.getColor(R.color.teal_700))

@@ -104,6 +104,107 @@ class QuranRecitationRulesViewModel : ViewModel() {
                 R.string.mod_or_mad_e_muttasil_description),false, ArrayList()
             )
         )
+        suraAndDoaList.add(
+            SuraOrDuaItem("১৬.",context.getString(R.string.horkot),context.getString(
+                R.string.horkot_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("১৭.",context.getString(R.string.tanbin),context.getString(
+                R.string.tanbin_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("১৮.",context.getString(R.string.nun_sakin),context.getString(
+                R.string.nun_sakin_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("১৯.",context.getString(R.string.nun_sakin_and_tanbin),context.getString(
+                R.string.nun_sakin_and_tanbin_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("২০.",context.getString(R.string.iklab),context.getString(
+                R.string.iklab_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("২১.",context.getString(R.string.izhar),context.getString(
+                R.string.izhar_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("২২.",context.getString(R.string.idgom),context.getString(
+                R.string.idgom_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("২৩.",context.getString(R.string.idgom_type),context.getString(
+                R.string.idgom_type_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("২৪.",context.getString(R.string.idgom_e_bagunna),context.getString(
+                R.string.idgom_e_bagunna_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("২৫.",context.getString(R.string.idgom_e_belagunna),context.getString(
+                R.string.idgom_e_belagunna_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("২৬.",context.getString(R.string.ikfa),context.getString(
+                R.string.ikfa_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("২৭.",context.getString(R.string.alamote_wakfo),context.getString(
+                R.string.alamote_wakfo_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("২৮.",context.getString(R.string.wakfe_moanaka),context.getString(
+                R.string.wakfe_moanaka_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("২৯.",context.getString(R.string.modde_ewaj),context.getString(
+                R.string.modde_ewaj_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("৩০.",context.getString(R.string.modde_tobai),context.getString(
+                R.string.modde_tobai_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("৩১.",context.getString(R.string.mim_sakin_porar_niom),context.getString(
+                R.string.mim_sakin_porar_niom_description),false, ArrayList()
+            )
+        )
+
+        suraAndDoaList.add(
+            SuraOrDuaItem("৩২.",context.getString(R.string.ana_shobdo_porar_niom),context.getString(
+                R.string.ana_shobdo_porar_niom_description),false, ArrayList()
+            )
+        )
 
 
         setSuraAndDoaListData(suraAndDoaList)

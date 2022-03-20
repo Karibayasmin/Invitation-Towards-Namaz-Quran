@@ -47,7 +47,40 @@
     <string name="mod_or_mad_e_lazim_horfi_mukhaffaf_description">মদ্দে লাযীম হরফী মুখাফফাফ ঃ  হরফের উপর মোটা চিহ্ন বামে তাশদীদ না থাকলে, হরফের নাম ৪ আলিফ টেনে পড়তে হয়। একে মদ্দে লাযীম হরফী মুখাফফাফ বলে।</string>
     <string name="mod_or_mad_e_muttasil_title">মদ্দে মুত্তাসিল</string>
     <string name="mod_or_mad_e_muttasil_description">মদ্দে মুত্তাসিল ঃ মদের হরফের উপর মোটা চিহ্ন বামে হামযা থাকলে ৪ আলিফ টেনে পড়তে হয়। একে মদ্দে মুত্তাসিল বলে।</string>
-
+    <string name="horkot">হরকত</string>
+    <string name="horkot_description">হরকতঃ এক যবর, এক যের, এক পেশ কে হরকত বলে। হরকতের উচ্চারণ তাড়াতাড়ি করতে হয়। হরকত পড়ার সময় consciously খেয়াল রাখতে হয় যেন কোন ভাবে আমরা টান না দিয়ে ফেলি, তাহলেই হরকত এর সঠিক উচ্চারণ হয়ে যাবে।</string>
+    <string name="tanbin">তানবীন</string>
+    <string name="tanbin_description">তানবীনঃ দুই যবর দুই যের দুই পেশ কে তানবীন বলে।</string>
+    <string name="nun_sakin">নুন সাকিন</string>
+    <string name="nun_sakin_description">নুন সাকিনঃ নুন এ সাকিন যযম আলা নুন কে বলে।</string>
+    <string name="nun_sakin_and_tanbin">নুন সাকিন এবং তানবীন ৪ প্রকারে পড়া হয়</string>
+    <string name="nun_sakin_and_tanbin_description">নুন সাকিন এবং তানবীন ৪ প্রকারে পড়া হয়__\n১। ইকলাব\n২। ইদ্গম\n৩। ইযহার\n৪। ইকফা</string>
+    <string name="iklab">ইকলাব</string>
+    <string name="iklab_description">ইকলাবঃ  ইকলাব অর্থ পরিবর্তন করে পড়া। ইকলাব এর হরফ একটি " বা "। নুন সাকিন এবং তানবীন এর বামে ইকলাব এর হরফ " বা " আসলে ঐ নুন সাকিন এবং তানবীন কে মিম দ্বারা বদলিয়ে গুন্নাহ এর সাথে মিলিয়ে পড়তে হয়। একে ইকলাব বলে।</string>
+    <string name="izhar">ইযহার</string>
+    <string name="izhar_description">ইযহারঃ  ইযহার অর্থ স্পষ্ট করে পড়া। ইযহার এর হরফ ৬ টি__ হামযা, হা,  আইন, হা, গইন , খ। নুন সাকিন এবং তানবীন এর বামে ইযহার এর হরফ এর যেকোন হরফ আসলে ঐ নুন সাকিন এবং তানবীন কে গুন্নাহ ছাড়া স্পষ্ট করে পড়তে হয়। একে ইযহারে হাকিকী বলে।</string>
+    <string name="idgom">ইদ্গম</string>
+    <string name="idgom_description">ইদ্গমঃ ইদ্গম অর্থ মিলিয়ে পড়া। ইদ্গম এর হরফ ৬ টি__ ইয়া, ওয়াও, মিম, নুন, র, লাম।</string>
+    <string name="idgom_type">ইদ্গম ২ প্রকার।</string>
+    <string name="idgom_type_description">ইদ্গম ২ প্রকার।\n১। ইদ্গম এ বাগুন্না\n২। ইদ্গম এ বেলাগুন্না</string>
+    <string name="idgom_e_bagunna">ইদ্গম এ বাগুন্না</string>
+    <string name="idgom_e_bagunna_description">ইদ্গম এ বাগুন্নাঃ ইদ্গম এ বাগুন্না এর অর্থ গুন্নাহ এর সাথে মিলিয়ে পড়া। ইদ্গম এ বাগুন্নার হরফ ৪ টি__ ইয়া, ওয়াও, মিম, নুন। নুন সাকিন এবং তানবীন এর বামে ইদ্গমে বাগুন্নার ৪ হরফের যেকোন হরফ আসলে বাগুন্নার হরফে তাশদীদ  দিয়ে গুন্নাহ এর সাথে মিলিয়ে পড়তে হয়। একে ইদ্গম এ বাগুন্না বলে।</string>
+    <string name="idgom_e_belagunna">ইদ্গম এ বেলাগুন্না</string>
+    <string name="idgom_e_belagunna_description">ইদ্গম এ বেলাগুন্নাঃ ইদ্গম এ বেলাগুন্না এর অর্থ গুন্নাহ ছাড়া মিলিয়ে পড়া। ইদ্গম এ বেলাগুন্না এর হরফ ২টি__ র, লাম। নুন সাকিন এবং তানবীন এর বামে ইদ্গমে বেলাগুন্নার ২ হরফের যেকোন হরফ আসলে বেলাগুন্নার হরফে তাশদীদ  দিয়ে গুন্নাহ ছাড়া মিলিয়ে পড়তে হয়। একে ইদ্গম এ বেলাগুন্না বলে।</string>
+    <string name="ikfa">ইকফা</string>
+    <string name="ikfa_description">ইকফাঃ ইকফা অর্থ গোপন করে পড়া বা লুকিয়ে পড়া। ইকফার হরফ ১৫ টি। বা, ছা, জিম, দাল, যাল, ঝা, ছিন, শিন, ছোয়াদ, দোয়াদ, ত্ব, জ্ব , ফা, ক্বফ, কাফ। নুন সাকিন এবং তানবীন এর বামে ইকফার ১৫ হরফের যেকোন হরফ আসলে ঐ নুন সাকিন এবং তানবীন কে নাকের ভিতর লুকিয়ে গুন্নাহ করে পড়তে হয়। একে ইকফায়ে হাকিকী বলে।</string>
+    <string name="alamote_wakfo">আলামতে ওয়াকফ</string>
+    <string name="alamote_wakfo_description">আলামতে ওয়াকফঃ শেষ হরফে ১ যবর, ১ যের, ১ পেশ, দুই যের, ২ পেশ, থাকলে মনে মনে যযম ধরে সাকিন করে পড়তে হয়। একে আলামতে অয়াকফ বলে।</string>
+    <string name="wakfe_moanaka">ওয়াকফে মোয়ানাকা</string>
+    <string name="wakfe_moanaka_description">ওয়াকফে মোয়ানাকাঃ  (৩,৩) ৬ ফোঁটা ওয়াকফে মোয়ানাকা। প্রথম টাতে  ওয়াকফো করলে ২য় টাতে করতে হয় না। ২য় টাতে ওয়াকফো করলে ১ম টাতে করতে হয় না।</string>
+    <string name="modde_ewaj">মদ্দে এওয়াজ</string>
+    <string name="modde_ewaj_description">মদ্দে এওয়াজঃ ২ যবর তানবীন এর বামে ওয়াকফো হলে ১ যবর বাদ দিয়ে ১ আলিফ টেনে পড়তে হয়। একে মদ্দে এওয়াজ বলে।</string>
+    <string name="modde_tobai">মদ্দে ত্ববায়ী</string>
+    <string name="modde_tobai_description">মদ্দে ত্ববায়ীঃ খাড়া যবর, খাড়া যের, উল্টা পেশ হলে ১ আলিফ টেনে পড়তে হয়।একে মদ্দে ত্ববায়ী বলে।</string>
+    <string name="mim_sakin_porar_niom">মিম সাকিন পড়ার নিয়ম</string>
+    <string name="mim_sakin_porar_niom_description">মিম সাকিন পড়ার নিয়মঃ মিম সাকিন এর পরে  "বা"  অথবা  "মিম" থাকলে মিম সাকিন কে গুন্নাহ করে পড়তে হয়। অন্য কোন হরফ আসলে গুন্নাহ হবে না।</string>
+    <string name="ana_shobdo_porar_niom">আনা শব্দ পড়ার নিয়ম</string>
+    <string name="ana_shobdo_porar_niom_description">আনা শব্দ পড়ার নিয়মঃ কোরআন শরীফ এর মধ্যে ৪ যায়গায় আনা শব্দের আলিফ কে পড়তে হয়। এই ৪ যায়গা ব্যাতীত আনা শব্দের আলিফ এ টান হবে না।১। আনা শব্দের পরে বা থাকলে\n২। আনা শব্দের পরে বু থাকলে\n৩। আনা শব্দের পরে মিলা থাকলে\n৪। আনা শব্দের পরে ছিয়া থাকলে</string>
 
     <!--Sura uses in Namaz-->
     <string name="sura_uses_in_namaz">নামাযে ব্যবহৃত সূরা</string>
@@ -62,5 +95,8 @@
     <string name="tasbih">তাসবিহ</string>
 
     <string name="empty_string"> </string>
+
+    <!--Toolbar title-->
+    <string name="quran_recitation_rules_title">কোরআন পড়ার নিয়ম</string>
 
 </resources>

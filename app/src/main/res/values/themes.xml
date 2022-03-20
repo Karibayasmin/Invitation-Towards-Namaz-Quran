@@ -26,4 +26,9 @@
     <style name="Theme.InvitationTowardsNamazQuran.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.InvitationTowardsNamazQuran.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarColor" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
 </resources>
