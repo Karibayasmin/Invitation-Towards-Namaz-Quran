@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModelProvider
 import com.kariba.invitationtowardsnamazquran.R
 import com.kariba.invitationtowardsnamazquran.activity.FragmentActivity.Companion.TAG_QURAN_RECITATION_RULES
+import com.kariba.invitationtowardsnamazquran.activity.FragmentActivity.Companion.TAG_TASBIH
 import com.kariba.invitationtowardsnamazquran.activity.FragmentActivity.Companion.startActivity
 import com.kariba.invitationtowardsnamazquran.databinding.FragmentHomeBinding
 import com.kariba.invitationtowardsnamazquran.viewmodel.HomeViewModel
@@ -38,30 +39,28 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setAnimationOnTouchOption()
-
         switchFragment()
     }
 
     private fun switchFragment() {
         cardView_quranRecitation_Rules.setOnClickListener {
             startActivity(requireContext(), TAG_QURAN_RECITATION_RULES)
+
+            val handler = Handler()
+            handler.postDelayed({
+                cardView_quranRecitation_Rules.setCardBackgroundColor(resources.getColor(R.color.colorPrimary))
+            }, 1000)
+            cardView_quranRecitation_Rules.setCardBackgroundColor(resources.getColor(R.color.teal_700))
         }
-    }
 
-    private fun setAnimationOnTouchOption() {
-        cardView_quranRecitation_Rules.setOnTouchListener { v, event ->
-            if(event.action == KeyEvent.ACTION_DOWN){
-                val handler = Handler()
-                handler.postDelayed({
-                    cardView_quranRecitation_Rules.setCardBackgroundColor(resources.getColor(R.color.colorPrimary))
-                }, 3000)
+        cardView_tasbih.setOnClickListener {
+            startActivity(requireContext(), TAG_TASBIH)
 
-            }else{
-                cardView_quranRecitation_Rules.setCardBackgroundColor(resources.getColor(R.color.teal_700))
-
-            }
-            return@setOnTouchListener false
+            val handler = Handler()
+            handler.postDelayed({
+                cardView_tasbih.setCardBackgroundColor(resources.getColor(R.color.colorPrimary))
+            }, 1000)
+            cardView_tasbih.setCardBackgroundColor(resources.getColor(R.color.teal_700))
         }
     }
 }

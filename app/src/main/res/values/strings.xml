@@ -93,10 +93,18 @@
 
     <!--Tasbih-->
     <string name="tasbih">তাসবিহ</string>
+    <string name="tasbih_count">তাসবিহ গণনা করতে স্ক্রিন এ টাচ করুন।</string>
+    <string name="tasbih_reset">তাসবিহ রিসেট করুন।</string>
+    <string name="tasbih_reset_alert">তাসবিহ রিসেট করতে চান?</string>
+    <string name="yes_alert">হ্যাঁ</string>
+    <string name="no_alert">না</string>
 
-    <string name="empty_string"> </string>
+    <!--Arbi word-->
+    <string name="arbi_word">জনপ্রিয় আরবী শব্দ</string>
 
     <!--Toolbar title-->
     <string name="quran_recitation_rules_title">কোরআন পড়ার নিয়ম</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
