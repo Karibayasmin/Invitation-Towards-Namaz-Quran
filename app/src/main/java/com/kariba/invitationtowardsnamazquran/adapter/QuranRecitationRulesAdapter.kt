@@ -93,7 +93,7 @@ class QuranRecitationRulesAdapter (
                             View.GONE
                 }
 
-                if(item.subMenu.isNullOrEmpty()){
+                /*if(item.subMenu.isNullOrEmpty()){
                     itemBinding.recyclerViewSuraOrDoaSubitem.visibility = View.GONE
 
                 }else{
@@ -106,7 +106,7 @@ class QuranRecitationRulesAdapter (
                     itemBinding.recyclerViewSuraOrDoaSubitem.adapter = subMenuAdapter
 
 
-                }
+                }*/
         }
     }
 }

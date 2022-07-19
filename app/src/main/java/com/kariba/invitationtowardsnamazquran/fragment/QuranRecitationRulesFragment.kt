@@ -93,13 +93,13 @@ class QuranRecitationRulesFragment : Fragment() {
         if (item.subMenu?.isNotEmpty() == true)
             return
 
-        if(item.itemTitle == context.getString(R.string.Allah_name_example_one)){
+        /*if(item.itemTitle == context.getString(R.string.Allah_name_example_one)){
             val music: MediaPlayer = MediaPlayer.create(context, R.raw.allohu)
             music.start()
         }
         if(item.itemTitle == context.getString(R.string.Allah_name_example_two)){
             val music: MediaPlayer = MediaPlayer.create(context, R.raw.allohu)
             music.start()
-        }
+        }*/
     }
 }
